@@ -12,6 +12,6 @@ buildNumber.properties
 .cache
 tmp
 local
-.zip
-.tgz
-.tar.gz
+*.zip
+*.tgz
+*.tar.gz
