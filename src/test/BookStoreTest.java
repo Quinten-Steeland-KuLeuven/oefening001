@@ -52,5 +52,14 @@ public class BookStoreTest {
 		// that do not have any books registered in the book store
 		assertEquals(0, bs.getBooksByAuthor("IDoNotExist").size());
 	}
+
+	@Test
+	public void testFictitiousYear() {
+		BookStore bs = new BookStore("");
+
+		// Make sure the application does not crash when we look up years
+		// that do not have any books registered in the book store
+		assertEquals(0, bs.getBooksByYear("1").size());
+	}
 }
 
