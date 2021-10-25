@@ -22,7 +22,5 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean package
-
-    -name: Run Test
-      cmd: java -cp target/bookstore-application-1.0.0.jarbookstore.Main
-      cmd: mvn test
+      run: java -cp target/bookstore-application-1.0.0.jarbookstore.Main
+      run: mvn test
